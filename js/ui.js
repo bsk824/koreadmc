@@ -1,23 +1,30 @@
 var winW = $(window).width();
-var fontNum = 3;
-function fontCtrl(o) {
-	var wrap = $('html')
-	if (o === 'minus' && fontNum > 1) {
-		fontNum -= 1;
-		wrap.removeAttr('class').addClass('fontCtrl'+fontNum);
-	}
-	if (o === 'plus' && fontNum < 5) {
-		fontNum += 1;
-		wrap.removeAttr('class').addClass('fontCtrl'+fontNum);
-	}
-}
-function siteOpen(obj) {
-	var listWrap = $('.'+obj);
-	listWrap.show();
-	listWrap.on('mouseleave', function(){
-		$(this).hide();
+function gnb(obj) {
+	var gnbWrap = $(obj),
+		gnbBtn = gnbWrap.find('.btnMenu'),
+		gnbMenu = gnbWrap.find('.gnb > ul > li > a');
+
+	gnbBtn.on('click', function() {
+		$('body').addClass('menuOn');
+	});
+	gnbMenu.on({
+		mouseenter : function(){
+			$('body').addClass('menuOn');
+		},
+		click : function(){
+			var winW = $(window).width(),
+				$this = $(this);
+			if (winW < 1024) {
+				$this.parent().addClass('subMenuOn').siblings().removeClass('subMenuOn');
+			}
+			return false;
+		}
+	});
+	gnbWrap.on('mouseleave', function(){
+		$('body').removeClass('menuOn');
 	});
 }
+gnb('#header');
 function tabMenu(_this) {
 	var $this = $(_this),
 		tabWrap = $this.closest('.tabContents'),
@@ -29,8 +36,6 @@ function tabMenu(_this) {
 		tabList.find('li').eq(idx).addClass('active').siblings().removeClass('active');
 		tabContent.eq(idx).show().siblings('.tabContent').hide();
 	})
-
-
 }
 function fontSize(w) {
 	if (w <= 560) {
@@ -61,31 +66,33 @@ function setCookie(cname, cvalue, exdays) {
 	var expires = "expires="+d.toUTCString();
 	document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
-function getInternetVersion(ver) {
-	var rv = -1;
-	var ua = navigator.userAgent;
-	var re = null;
-	if(ver == "MSIE"){
-		re = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
-	}else{
-	re = new RegExp(ver+"/([0-9]{1,}[\.0-9]{0,})");
+$(function(){
+	function getInternetVersion(ver) {
+		var rv = -1;
+		var ua = navigator.userAgent;
+		var re = null;
+		if(ver == "MSIE"){
+			re = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
+		}else{
+		re = new RegExp(ver+"/([0-9]{1,}[\.0-9]{0,})");
+			}
+		if (re.exec(ua) != null){
+			rv = parseFloat(RegExp.$1);
 		}
-	if (re.exec(ua) != null){
-		rv = parseFloat(RegExp.$1);
+		return rv;
 	}
-	return rv;
-}
-function browserCheck() {
-	var ver = 0;
-	if(navigator.appName.charAt(0) == "M"){
-		ver = getInternetVersion("MSIE");
-		if (ver < "9"){
-			$('body').prepend('<div id="version"><p>고객님께서는 현재 Internet Explorer 구형버전으로 접속 중이십니다. 이 사이트는 Internet Explorer 최신버전에 최적화 되어 있습니다. <a href="http://windows.microsoft.com/ko-kr/internet-explorer/download-ie" target="_blank">Internet Explorer 업그레이드 하기</a></p><p>만약 WINDOW XP를 사용 중이시라면 구글 크롬을 설치 하여주시기 바랍니다. <a href="https://www.google.co.kr/chrome/browser/desktop/">구글 크롬 설치 하기</a></p> <button type="button" class="versionClose">X</button></div>');
+	function browserCheck() {
+		var ver = 0;
+		if(navigator.appName.charAt(0) == "M"){
+			ver = getInternetVersion("MSIE");
+			if (ver < "9"){
+				$('body').prepend('<div id="version"><p>고객님께서는 현재 Internet Explorer 구형버전으로 접속 중이십니다. 이 사이트는 Internet Explorer 최신버전에 최적화 되어 있습니다. <a href="http://windows.microsoft.com/ko-kr/internet-explorer/download-ie" target="_blank">Internet Explorer 업그레이드 하기</a></p><p>만약 WINDOW XP를 사용 중이시라면 구글 크롬을 설치 하여주시기 바랍니다. <a href="https://www.google.co.kr/chrome/browser/desktop/">구글 크롬 설치 하기</a></p> <button type="button" class="versionClose">X</button></div>');
+			}
 		}
 	}
-}
-browserCheck();
+	browserCheck();
 
-$('#version').on('click','.versionClose',function(){
-	$('#version').hide();
+	$('#version').on('click','.versionClose',function(){
+		$('#version').hide();
+	});
 });

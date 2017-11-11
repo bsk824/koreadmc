@@ -21,9 +21,8 @@
 }
 * {margin:0;padding:0;}
 html {font-size:62.5%;}
-body {min-width:1000px\9;color:#666;font:14px/1.5 notoR, sans-serif;-webkit-text-size-adjust:none;word-break:keep-all;}
-h1, h2, h3, h4, h5 {font-weight:normal;}
-a {color:#666;text-decoration:none;}
+body {min-width:1024px\9;color:#474747;font:14px/1.5 notoR, sans-serif;-webkit-text-size-adjust:none;word-break:keep-all;}
+a {color:#474747;text-decoration:none;}
 li {list-style:none;}
 table {width:100%;border-collapse:collapse;border:0;word-break:normal;}
 colgroup {background:none;}
@@ -33,12 +32,12 @@ img {vertical-align:top;}
 label, td img {vertical-align:middle;}
 legend, caption, .hidden {position:absolute;z-index:-1;font:0/0 a!important;}
 address, em {font-style:normal;}
-strong, b {font-weight:normal;}
+strong, b {font-family:notoB;}
 button {overflow:visible;cursor:pointer;background:none;border:0;}
 button::-moz-focus-inner {padding:0;border:0;}
 article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav, menu, nav, section {display:block;}
 
-::-webkit-input-placeholder, ::-moz-placeholder, :-ms-input-placeholder {color:#666;}
+::-webkit-input-placeholder, ::-moz-placeholder, :-ms-input-placeholder {color:#474747;}
 
 input.txt {line-height:1;}
 select {height:30px;border:1px solid #dbdbdb;}
@@ -68,7 +67,7 @@ textarea, input.txt {padding:7px 5px;border:1px solid #dbdbdb;resize:none;}
 .ui-datepicker td a {display:block;padding:5px;text-align:center;}
 .ui-datepicker-trigger {width:19px;height:19px;margin:0 0 0 5px;background:url(../images/btn_cal.gif) no-repeat;font:0/0 a!important;}
 
-@media all and (max-width:999px) {
+@media all and (max-width:1024px) {
 	html {font-size:62.5%;}
 	body, input, select, textarea, button {font-size:1.4rem;}
 	select {height:3rem;}

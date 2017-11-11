@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+.beforeAfter dt {margin:30px 0 15px;font-size:18px;line-height:1.2;}
+.beforeAfter dd {background:url(../images/bg_arrow.gif) no-repeat 50% 50%;}
+.beforeAfter dd:after {content:"";display:block;clear:both;}
+.beforeAfter dd > span {float:left;width:340px;border:1px solid #c8c4bd;text-align:center;}
+.beforeAfter dd > .after {float:right;}
+.beforeAfter dd strong {display:block;line-height:40px;font-family:notoR;}
+.beforeAfter dd .before strong {background:#dddad5;}
+.beforeAfter dd .after strong {background:#abbc67;color:#fff;}
+.beforeAfter dd > span span {display:flex;height:90px;padding:0 20px;justify-content:center;align-items:center;}
