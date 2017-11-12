@@ -32,7 +32,7 @@
 .subCate4 {background:url(../images/img_sub_visual4.jpg) no-repeat;}
 .subCate5 {background:url(../images/img_sub_visual5.jpg) no-repeat;}
 #snb {float:left;width:200px;outline:0 none;}
-#snb h2 {height:50px;padding:30px 0 0 15px;font-size:24px;line-height:1.2;}
+#snb h2 {height:70px;padding:10px 0 0 15px;font-size:24px;line-height:1.2;}
 #snb h2 span {display:inline-block;vertical-align:middle;}
 #snb h2:after {content:"";display:inline-block;height:100%;vertical-align:middle;}
 #snb nav li {position:relative;display:table;width:100%;}
@@ -78,18 +78,23 @@
 .section .title3 {margin:20px 0 5px;font-weight:bold;}
 .section .title4 {margin:30px 0 5px;font-size:18px;font-weight:normal;}
 .section .txt {line-height:2;}
+.section .txt1 {font-size:18px;line-height:2;}
+.section .txt1 ~ .txt1 {margin-top:30px}
 .section .txt2 {padding-left:15px;background:url(../images/bul_title.gif) no-repeat 5px 7px;line-height:2;}
 .section .txt2 ~ .txt2 {margin-top:30px;}
 .section .txt3 {padding-left:15px;background:url(../images/bul_line.gif) no-repeat 5px 12px;line-height:2;}
 .section .tip {margin:5px 0 0;font-size:12px;}
 .section .img {text-align:center;}
 .section .img img {max-width:100%;}
+.section .img2 {margin:30px 0 0;text-align:center;}
+.section .img2 img {max-width:100%;}
+.section .rightImg {text-align:right;}
 .source {margin:60px 0 0;text-align:right;}
 
 /* table */
 .infoTable table {width:100%;border:1px solid #e1ddcd;}
 .infoTable th,
-.infoTable td {padding:13px 5px;border:1px solid #e1ddcd;font-weight:normal;}
+.infoTable td {padding:13px 10px;border:1px solid #e1ddcd;font-weight:normal;}
 .infoTable .center {text-align:center;}
 .infoTable thead th {background:#f0eee6;}
 .infoTable tbody th {background:#eeecea;}
@@ -98,3 +103,44 @@
 
 /* font */
 .fontColor1 {color:#ff7200;}
+
+/* bbs */
+.bbsList {border-bottom:1px solid #e2e2e2;}
+.bbsList li {border-top:1px solid #e2e2e2;}
+.bbsList li a {position:relative;display:block;padding:10px 30px 10px 215px;font-size:18px;}
+.bbsList .sort {position:absolute;top:15px;left:25px;}
+.bbsList .date {position:absolute;top:15px;left:110px;}
+.bbsList .tit {display:block;font-size:24px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.noticeType li a {padding-left:110px}
+.noticeType .date {left:25px;}
+
+.bbsView {border-bottom:1px solid #e2e2e2;}
+.bbsView .tit {padding:10px 30px;border-top:1px solid #e2e2e2;font-size:24px;line-height:1.2;}
+.bbsView .info {padding:10px 30px;border-top:1px solid #e2e2e2;font-size:18px;}
+.bbsView .content {padding:30px 30px 100px;border-top:1px solid #e2e2e2;}
+.bbsView nav {position:relative;padding:10px 30px;border-top:1px solid #e2e2e2;font-size:18px;}
+.bbsView nav .prev {margin-right:10px;}
+.bbsView nav .list {position:absolute;top:10px;right:30px;}
+
+.bbsWrite table {width:100%;}
+.bbsWrite tbody th {padding:25px 20px;font-size:18px;text-align:left;vertical-align:top;}
+.bbsWrite tbody th:before {content:"";display:inline-block;width:3px;height:3px;margin:0 5px 0 0;background:#999;vertical-align:6px;}
+.bbsWrite tbody td {padding:10px 0;}
+.bbsWrite tbody td .size1 {width:415px;}
+.bbsWrite tbody td .size2 {width:100%;}
+.bbsWrite tbody td .size3 {width:485px;}
+.bbsWrite .phone span + span {margin-left:10px;}
+.bbsWrite .phone input[type="text"] {width:130px;}
+.bbsWrite .inputFile [class*="btnType"] {margin-left:10px;}
+
+/* input */
+.inputTxt {background:#f3f3f3;padding:18px 10px;font-size:18px;line-height:1;border:0;vertical-align:middle;box-sizing:border-box;}
+.inputFile [class*="btnType"] {position:relative;cursor:pointer;}
+.inputFile input[type="file"] {position:absolute;top:0;right:0;bottom:0;left:0;visibility:hidden;}
+textarea {overflow:auto;resize:none;width:100%;}
+
+/* button */
+.btnWrap {margin:30px 0 0;text-align:center;}
+[class*="btnType"] {vertical-align:middle;}
+.btnType1 {background:#aaa295;color:#fff;padding:18px 30px;font-size:18px;line-height:1;}
+.btnBig {font-size:24px;}

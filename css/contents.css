@@ -9,3 +9,47 @@
 .beforeAfter dd .before strong {background:#dddad5;}
 .beforeAfter dd .after strong {background:#abbc67;color:#fff;}
 .beforeAfter dd > span span {display:flex;height:90px;padding:0 20px;justify-content:center;align-items:center;}
+
+.infoSection {position:relative;color:#8b857c;}
+.infoSection ~ .infoSection {margin:100px 0 0;}
+.infoSection .title {font-size:72px;font-weight:normal;line-height:1.1;}
+.infoSection .title span {display:block;font-size:48px;font-weight:bold;}
+.infoSection .title2 {margin:40px 0 0;}
+.infoSection .title2,
+.infoSection .list li {position:relative;padding-left:25px;font-size:24px;}
+.infoSection .title2:after,
+.infoSection .list li:before {content:"";position:absolute;top:15px;left:5px;width:6px;height:6px;background:#d4d0cb;border-radius:50%;}
+.infoSection .txt1 {margin:15px 0 0;font-size:36px;line-height:1.2;}
+.infoSection .list {margin:40px 0 0;}
+.infoSection .list2 {margin:10px 0 0 25px;font-size:18px;}
+.infoSection .list2 li + li {margin:10px 0 0;}
+.infoSection .desc {width:272px;height:72px;margin:40px 0 0;padding:10px;background:#eeeae5;border-radius:5px;}
+.infoSection .desc dt {margin:0 0 3px;}
+.infoSection .desc dd {font-size:12px;line-height:1.4;}
+.infoSection .infoImg1 {position:absolute;bottom:-200px;right:0;}
+.infoSection .infoImg2 {position:absolute;bottom:0;right:0;}
+.infoSection .infoImg3 {position:absolute;bottom:0;right:0;}
+.infoSection .infoImg4 {position:absolute;top:270px;right:0;z-index:-1;}
+.infoSection .infoType2 {position:relative;margin:40px 0 0;padding:0 0 25px;}
+.infoSection .infoType2 .tit {position:absolute;top:0;left:25px;}
+.infoSection .infoType2 .list2 {margin-left:245px;}
+.infoSection .pcmargin {margin-top:80px;}
+
+.clinicalList {margin-top:30px;}
+.clinicalList li {float:left;width:340px;padding:0 80px 30px 0;}
+.clinicalList li:nth-of-type(2n) {padding-right:0;}
+.clinicalList li * {display:block;}
+.clinicalList li img {max-width:100%;}
+.clinicalList li strong {margin:10px 0;font-size:24px;}
+
+.press {margin-top:60px;}
+.press h2 {font-size:24px;color:#ff6000;}
+.press li {position:relative;margin:15px 0 0;padding-left:19px;font-size:24px;}
+.press li:before {content:"";position:absolute;top:15px;left:7px;width:3px;height:3px;background:#464747;}
+.press li a {text-decoration:underline;}
+
+.clinicalSection {margin:0 0 10px;padding:0 0 180px;background:url(../images/img_clinical03_01.jpg) no-repeat 100% 100%;}
+.clinicalSection .txt1 {font-size:48px;line-height:1.2;color:#8b857c;}
+.clinicalSection .txt2 {margin:10px 0 0;font-size:72px;line-height:1.1;color:#8b857c;}
+.clinicalSection .txt2 b {display:inline-block;position:relative;padding-top:10px;}
+.clinicalSection .txt2 b:before {content:"";position:absolute;top:0;left:50%;width:9px;height:9px;margin-left:4px;background:#8b857c;border-radius:50%;}
