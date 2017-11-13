@@ -121,7 +121,7 @@ textarea {overflow:auto;resize:none;width:100%;height:15rem;}
 
 	.section + .section {margin-top:3rem;}
 	.section .title1 {margin:0 0 2rem;font-size:2rem;}
-	.section .title2 {margin:3rem 0 1rem;padding-left:1.2rem;background-size:.6rem;background-position:0 .4rem;font-size:1.6rem;}
+	.section .title2 {margin:3rem 0 1rem;padding-left:1.2rem;background-size:.6rem;background-position:0 .2rem;font-size:1.6rem;}
 	.section .title3 {margin:2rem 0 .5rem;}
 	.section .title4 {margin:3rem 0 .5rem;font-size:1.6rem;}
 	.section .txt1 {font-size:1.4rem;}
@@ -144,7 +144,7 @@ textarea {overflow:auto;resize:none;width:100%;height:15rem;}
 	.bbsList li a span:first-child {margin-right:1rem;}
 	.bbsList .tit {display:block;font-size:1.4rem;}
 
-	.bbsView .tit {padding:.5rem;font-size:1.6rem;}
+	.bbsView .tit {padding:1rem .5rem 0;font-size:1.6rem;}
 	.bbsView .info {padding:.5rem;font-size:1.4rem;}
 	.bbsView .info span:first-child {margin-right:1rem;}
 	.bbsView .content {padding:.5rem .5rem 3rem;}
@@ -182,7 +182,7 @@ textarea {overflow:auto;resize:none;width:100%;height:15rem;}
 	.infoSection .title2,
 	.infoSection .list li {padding-left:1.5rem;font-size:1.6rem;}
 	.infoSection .title2:after,
-	.infoSection .list li:before {top:.6rem;left:0;width:.5rem;height:.5rem;}
+	.infoSection .list li:before {top:.7rem;left:0;width:.5rem;height:.5rem;}
 	.infoSection .list2 {margin:0 0 0 1.5rem;font-size:1.6rem;}
 	.infoSection .list2 li + li {margin:0;}
 	.infoSection .desc {width:auto;height:auto;margin:1rem 0 0;padding:1rem;border-radius:.5rem;}
