@@ -17,8 +17,12 @@
 #header .gnb .subMenu li {margin-top:1.5rem;}
 #header .gnb .subMenu li a {padding:0 1.5rem;}
 
-#container {padding:0 1.5rem;}
+#container {position:relative;padding-left:180px;background-position:100% 0;}
 .main #container {padding:0;}
+
+#snb {position:absolute;top:140px;left:0;width:170px;}
+#snb nav a {padding:0 0 0 10px;}
+#contents {float:none;width:100%;box-sizing:border-box;padding:0 1.5rem;}
 
 #footer p {padding:1rem 0 2rem 13rem;font-size:1.2rem;}
 #footer p img {top:.5rem;left:2rem;}
@@ -39,11 +43,65 @@
 .columnList li .txt2 {max-height:6rem;margin-top:1.5rem;font-size:1.3rem;}
 .columnList li .txt3 {display:block;overflow:hidden;max-height:60px;margin-top:15px;font-size:14px;text-overflow:ellipsis;white-space:nowrap;}
 
+/* bbs */
+.bbsWrite tbody td .inputTxt {width:100%;}
+.bbsWrite .phone {display:table;width:100%;}
+.bbsWrite .phone span {display:table-cell;width:33.33%;margin:0;}
+.bbsWrite .phone span + span {padding-left:1rem;}
+.bbsWrite .phone input[type="text"] {width:100%;}
+
+/* input */
+.inputFile {position:relative;display:block;padding-right:14rem;}
+.inputFile [class*="btnType"] {position:absolute;top:0;right:0;}
+textarea {overflow:auto;resize:none;width:100%;height:15rem;}
+
+.beforeAfter dt {margin:3rem 0 1.5rem;font-size:1.8rem;}
+.beforeAfter dd {background-size:2.5rem;}
+.beforeAfter dd > span {width:45%;}
+.beforeAfter dd strong {line-height:4rem;}
+.beforeAfter dd > span span {height:9rem;padding:0 1rem;}
+
+.infoSection .title {font-size:3.6rem;}
+.infoSection .title span {font-size:3rem;}
+.infoSection .txt1 {margin:1.5rem 0 0;font-size:2.4rem;}
+.infoSection .list {margin:2rem 0 0;}
+.infoSection .title2,
+.infoSection .list li {padding-left:2rem;font-size:2rem;}
+.infoSection .title2:after,
+.infoSection .list li:before {top:1.2rem;left:0;width:.6rem;height:.6rem;}
+.infoSection .infoImg1 {width:25rem;bottom:-10rem;}
+.infoSection .infoImg2 {width:20rem;}
+.infoSection .infoImg4 {top:15rem;width:19rem}
+.infoSection .infoImg4 img,
+.infoSection .infoImg2 img,
+.infoSection .infoImg1 img {max-width:100%;}
+
+.infoSection .infoType2 {position:relative;margin:3rem 0 0;padding:0;}
+.infoSection .infoType2 .tit {left:2.5rem;width:14rem;}
+.infoSection .infoType2 .tit img {width:100%;}
+.infoSection .infoType2 .list2 {margin-left:18rem;}
+
+.clinicalList {margin:3rem -1rem;}
+.clinicalList li {float:left;width:50%;margin:0;padding:0 1rem 2rem;box-sizing:border-box;}
+
+.clinicalSection {margin:0 0 1rem;padding:0 0 18rem;background-size:80%;}
+.clinicalSection .txt1 {font-size:3rem;}
+.clinicalSection .txt2 {margin:1rem 0 0;font-size:4rem;}
+.clinicalSection .txt2 b {padding-top:10px;}
+.clinicalSection .txt2 b:before {content:"";position:absolute;top:0;left:50%;width:6px;height:6px;margin-left:-3px;background:#8b857c;border-radius:50%;}
+
 @media all and (max-width:767px) {
 	#header {height:5rem;box-sizing:border-box;}
 	#header h1 img {width:8rem;}
 	#header .btnMenu {display:block;top:1rem;right:1.5rem;}
 	#header .gnb > ul {width:100%;top:5rem;}
+
+	#container {padding:12rem 0 0;background-position:80% 0;background-size:auto 10rem;}
+	#container.subCate1,
+	#container.subCate4 {background-position:100% 0;}
+	#snb {display:none;}
+	#contents {margin:0;}
+
 	#footer {margin:5rem 0 0;}
 	#footer p {padding:1rem 1rem 2rem 6.5rem;font-size:1.1rem;letter-spacing:-1px;}
 	#footer p img {width:5rem;top:1.2rem;left:.5rem;}
@@ -61,4 +119,98 @@
 	.columnList li .txt2 {max-height:6rem;margin-top:1rem;font-size:1.3rem;}
 	.columnList li .txt3 {display:block;overflow:hidden;max-height:60px;margin-top:15px;font-size:14px;text-overflow:ellipsis;white-space:nowrap;}
 
+	.section + .section {margin-top:3rem;}
+	.section .title1 {margin:0 0 2rem;font-size:2rem;}
+	.section .title2 {margin:3rem 0 1rem;padding-left:1.2rem;background-size:.6rem;background-position:0 .4rem;font-size:1.6rem;}
+	.section .title3 {margin:2rem 0 .5rem;}
+	.section .title4 {margin:3rem 0 .5rem;font-size:1.6rem;}
+	.section .txt1 {font-size:1.4rem;}
+	.section .txt1 ~ .txt1 {margin-top:3rem}
+	.section .txt2 {padding-left:15px;background:url(../images/bul_title.gif) no-repeat 5px 7px;line-height:2;}
+	.section .txt2 ~ .txt2 {margin-top:30px;}
+	.section .txt3 {padding-left:15px;background:url(../images/bul_line.gif) no-repeat 5px 12px;line-height:2;}
+	.section .tip {margin:.5rem 0 0;font-size:1.1rem;}
+	.section .img2 {margin:2rem 0 0;}
+	.section .rightImg img {max-width:100%;}
+	.source {margin:3rem 0 0;}
+
+	/* table */
+	.infoTable th,
+	.infoTable td {padding:.5rem .2rem;}
+
+	/* bbs */
+	.bbsList li a {position:relative;display:block;padding:.5rem;font-size:1.2rem;}
+	.bbsList .sort,	.bbsList .date {position:static;}
+	.bbsList li a span:first-child {margin-right:1rem;}
+	.bbsList .tit {display:block;font-size:1.4rem;}
+
+	.bbsView .tit {padding:.5rem;font-size:1.6rem;}
+	.bbsView .info {padding:.5rem;font-size:1.4rem;}
+	.bbsView .info span:first-child {margin-right:1rem;}
+	.bbsView .content {padding:.5rem .5rem 3rem;}
+	.bbsView nav {padding:.5rem;font-size:1.4rem;}
+	.bbsView nav .prev {margin-right:1rem;}
+	.bbsView nav .list {top:.5rem;right:.5rem;}
+
+	.bbsWrite tbody th {display:block;width:100%;padding:.5rem;font-size:1.4rem;}
+	.bbsWrite tbody th:before {width:.3rem;height:.3rem;margin:0 .5rem 0 0;vertical-align:.5rem;}
+	.bbsWrite tbody td {display:block;padding:0 .5rem;}
+
+	/* input */
+	.inputTxt {padding:.5rem;font-size:1.4rem;}
+	.inputFile {position:relative;display:block;padding-right:8rem;}
+	textarea {height:5rem;}
+
+	/* button */
+	.btnWrap {margin:2rem 0 0}
+	.btnType1 {padding:.7rem 1rem;font-size:1.4rem;}
+	.btnBig {padding:1rem 3rem;font-size:1.8rem;}
+
+	.beforeAfter dt {margin:2rem 0 1rem;font-size:1.4rem;}
+	.beforeAfter dd {background:none;}
+	.beforeAfter dd > span {display:block;float:none;width:100%;}
+	.beforeAfter dd > .after {margin-top:2rem;}
+	.beforeAfter dd strong {line-height:4rem;}
+	.beforeAfter dd > span span {height:auto;padding:2rem 1rem;}
+
+	.infoSection ~ .infoSection {margin:3rem 0 0;}
+	.infoSection .title {font-size:2.4rem;}
+	.infoSection .title span {font-size:2rem;}
+	.infoSection .title2 {margin:2rem 0 0;}
+	.infoSection .txt1 {margin:1.5rem 0 0;font-size:1.6rem;}
+	.infoSection .list {margin:1.5rem 0 0;}
+	.infoSection .title2,
+	.infoSection .list li {padding-left:1.5rem;font-size:1.6rem;}
+	.infoSection .title2:after,
+	.infoSection .list li:before {top:1rem;left:0;width:.5rem;height:.5rem;}
+	.infoSection .list2 {margin:0 0 0 1.5rem;font-size:1.6rem;}
+	.infoSection .list2 li + li {margin:0;}
+	.infoSection .desc {width:auto;height:auto;margin:1rem 0 0;padding:1rem;border-radius:.5rem;}
+	.infoSection .desc dt {margin:0 0 .3rem;}
+	.infoSection .desc dd {font-size:1.2rem;}
+	.infoSection img {max-width:100%;}
+	.infoSection .infoImg1,
+	.infoSection .infoImg2 {position:static;width:auto;margin:1rem;text-align:center;}
+	.infoSection .infoImg4 {display:none;}
+
+	.infoSection .infoType2 {margin:1.5rem 0 0;padding:0;}
+	.infoSection .infoType2 .tit {position:static;float:left;width:10rem;margin:0 1rem 0 0;}
+	.infoSection .infoType2 .list2 {margin-left:0;font-size:1.4rem;}
+
+	.pcbr {display:none;}
+
+	.clinicalList {margin:1.5rem 0;}
+	.clinicalList li {float:none;width:100%;margin:0;padding:0 0 1.5rem;box-sizing:border-box;}
+	.clinicalList li strong {margin:1rem 0;font-size:2rem;}
+
+	.press {margin-top:3rem;}
+	.press h2 {font-size:2rem;}
+	.press li {margin:1rem 0 0;padding-left:1.9rem;font-size:1.8rem;}
+	.press li:before {top:1rem;left:.7rem;width:.3rem;height:.3rem;}
+
+	.clinicalSection {padding:0 0 8rem;background-size:80%;}
+	.clinicalSection .txt1 {font-size:2rem;}
+	.clinicalSection .txt2 {margin:1rem 0 0;font-size:2.4rem;}
+	.clinicalSection .txt2 b {padding-top:.5rem;}
+	.clinicalSection .txt2 b:before {width:.4rem;height:.4rem;margin-left:-.2rem;}
 }

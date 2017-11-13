@@ -24,7 +24,6 @@ function gnb(obj) {
 		$('body').removeClass('menuOn');
 	});
 }
-gnb('#header');
 function tabMenu(_this) {
 	var $this = $(_this),
 		tabWrap = $this.closest('.tabContents'),
@@ -94,5 +93,12 @@ $(function(){
 
 	$('#version').on('click','.versionClose',function(){
 		$('#version').hide();
+	});
+
+	$('.inputFile input[type="file"]').on('change', function() {
+		var $this = $(this),
+			txt = $this.parent().prev('input[type="text"]');
+			val = $this.val();
+		txt.val(val);
 	});
 });

@@ -52,4 +52,4 @@
 .clinicalSection .txt1 {font-size:48px;line-height:1.2;color:#8b857c;}
 .clinicalSection .txt2 {margin:10px 0 0;font-size:72px;line-height:1.1;color:#8b857c;}
 .clinicalSection .txt2 b {display:inline-block;position:relative;padding-top:10px;}
-.clinicalSection .txt2 b:before {content:"";position:absolute;top:0;left:50%;width:9px;height:9px;margin-left:4px;background:#8b857c;border-radius:50%;}
+.clinicalSection .txt2 b:before {content:"";position:absolute;top:0;left:50%;width:9px;height:9px;margin-left:-4px;background:#8b857c;border-radius:50%;}
