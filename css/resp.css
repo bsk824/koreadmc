@@ -182,7 +182,7 @@ textarea {overflow:auto;resize:none;width:100%;height:15rem;}
 	.infoSection .title2,
 	.infoSection .list li {padding-left:1.5rem;font-size:1.6rem;}
 	.infoSection .title2:after,
-	.infoSection .list li:before {top:1rem;left:0;width:.5rem;height:.5rem;}
+	.infoSection .list li:before {top:.6rem;left:0;width:.5rem;height:.5rem;}
 	.infoSection .list2 {margin:0 0 0 1.5rem;font-size:1.6rem;}
 	.infoSection .list2 li + li {margin:0;}
 	.infoSection .desc {width:auto;height:auto;margin:1rem 0 0;padding:1rem;border-radius:.5rem;}
