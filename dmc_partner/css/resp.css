@@ -1,0 +1,117 @@
+@charset "utf-8";
+
+@media all and (max-width:1023px) {
+	#header h1 {left:2rem;}
+	#header h1 img {width:15rem;}
+	#header .headerInner {width:100%;overflow:hidden;}
+	#header .gnb {margin:0;float:right;}
+	#header .gnb > ul > li {padding:1.5rem 2rem 1.5rem 5rem;font-size: 2rem;}
+}
+@media all and (max-width:768px) {
+	#header .gnb > ul > li {padding:1.5rem;font-size:1.4rem;}
+}
+@media all and (max-width:560px) {
+	#header h1 {left:.5rem;}
+	#header h1 a {line-height:0;}
+	#header h1 img {width:9rem;}
+	#header .gnb > ul > li {padding:1rem .5rem;font-size:1.2rem;}
+}
+
+.mainService {
+	max-width:100%;
+	height:auto;
+	padding:2rem 5rem;
+	background-position:50% 50%;
+	background-size:cover;
+	box-sizing:border-box;
+}
+.mainService .tit {padding:1.5rem 0 1rem;font-size:1.8rem;}
+.mainService .list li {margin:0;font-size:2.4rem;}
+
+@media all and (max-width:768px) {
+	.mainService {padding:1rem;}
+	.mainService .tit {padding:1rem 0 .5rem;font-size:1.8rem;}
+	.mainService .list li {font-size:1.4rem;}
+}
+.mainPr .sectionInner {max-width:100%;padding:0 0 2rem;}
+.mainPr .tit {padding:3.5rem 0 2rem 5rem;font-size:1.8rem;}
+.mainPr .txt {margin-left:5rem;font-size:2.4rem;}
+.mainPr .list {max-width:100%;}
+.mainPr .list li {margin:1rem 2.5rem 0;}
+@media all and (max-width:768px) {
+	.mainPr {padding:1rem;}
+	.mainPr .tit {padding:1rem 0 .5rem;font-size:1.8rem;}
+	.mainPr .txt {margin-left:0;font-size:1.4rem;}
+}
+.mainContact .sectionInner {max-width:100%;padding:0 5rem;}
+
+@media all and (max-width:767px) {
+	.mainContact {padding:1rem;}
+	.mainContact .sectionInner {max-width:100%;padding:0;}
+	.mainContact .tit {padding:1rem 0 .5rem;font-size:1.8rem;}
+}
+@media all and (max-width:1023px) {
+	.inputTable {width:100%!important;}
+	.inputTable + .btnWrap {margin:2rem 0 0;text-align:right;}
+	.inputTable th {display:inline-block;width:15%;padding:1rem 0;font-size:2rem;box-sizing:border-box;}
+	.inputTable td {display:inline-block;width:85%;padding:1rem 0 1rem 1rem;box-sizing:border-box;}
+	.inputTable td textarea {width:100%!important;}
+}
+@media all and (max-width:560px) {
+	select,
+	.inputTxt {height:3rem;font-size:1.4rem;}
+	.inputTable .moSel,
+	.inputTable .inputTxt {width:100%!important;}
+	.inputTable .address select {width:100%!important;}
+	.inputTable .phone select {width:6rem!important;}
+	.inputTable .email select {width:10rem!important;}
+	.inputTable .row {display:table;width:100%;}
+	.inputTable .cell {display:table-cell;float:none;text-align:center;line-height:1;}
+	.inputTable .cell + .cell {padding-left:.5rem;}
+	.inputTable th {padding:.8rem 0;font-size:1.4rem;}
+	.inputTable td {padding:.5rem 0 .5rem 1rem;font-size:1.4rem;}
+}
+
+
+#footer p {width:100%;box-sizing:border-box;}
+
+.infoWrap {max-width:100%;margin:0 0 10rem;padding:5rem;}
+.infoWrap p {margin:3rem 0 0;font-size:2rem;line-height:2;}
+@media all and (max-width:560px) {
+	.infoWrap {margin:0 0 5rem;padding:1rem;}
+	.infoWrap p {font-size:1.4rem;}
+	.infoWrap p img {width:70%;}
+}
+
+.serviceWrap {max-width:100%;margin:0 0 10rem;padding:5rem;}
+.serviceWrap .list1 li {width:50%;margin:0;padding:0 2rem;box-sizing:border-box;text-align:center;}
+.serviceWrap .list1 img {height:150px;}
+.serviceWrap .list1 .item3 {top:25rem;left:auto;right:0;}
+.serviceWrap .list2 {width:50%;margin-top:10rem;}
+.serviceWrap .list2 li {font-size:2rem;}
+
+@media all and (max-width:767px) {
+	.serviceWrap {padding:5rem 1rem;}
+	.serviceWrap .list1 li {width:33%;padding:0 .5rem;}
+	.serviceWrap .list1 img {height:9rem;}
+	.serviceWrap .list1 .item3 {position:static;}
+	.serviceWrap .list2 {width:100%;margin-top:5rem;}
+}
+
+@media all and (max-width:560px) {
+	.serviceWrap {padding:4rem 1rem 0;}
+	.serviceWrap .list1 img {height:6rem;}
+	.serviceWrap .list2 {margin-top:4rem;}
+	.serviceWrap .list2 li {font-size:1.4rem;text-align:left;}
+}
+
+.contactWrap {max-width:100%;margin:0 0 10rem;padding:5rem;}
+@media all and (max-width:767px) {
+	.contactWrap {padding:4rem 1rem 0;}
+	.contactWrap .txt {margin-bottom:4rem;font-size:1.8rem;}
+}
+.btnType1 {width:18rem;height:6rem;font-size:2.4rem;}
+
+@media all and (max-width:560px) {
+	.btnType1 {width:15rem;height:4rem;font-size:2rem;}
+}
